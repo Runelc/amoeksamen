@@ -246,12 +246,10 @@ ol>li::before {
   font-size: 1.5vw;
 }
 
-video {
+iframe {
   display: block;
   margin: 0 auto;
   margin-bottom: 4vw;
-  width: 710px;
-  height: 100%;
 }
 
 /***** Footer *****/
@@ -582,10 +580,10 @@ tr:nth-child(even) {
     margin: 0% auto;
   }
 
-/* video retning*/
-  video {
-    width: 100%;
-  }
+  /* video retning*/
+  iframe {
+      width: 100%;
+    }
 
   .videooverskrift {
     margin-bottom: 1vw;

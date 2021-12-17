@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Vesper+Libre&family=Work+Sans:ital,wght@0,200;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/***** Navbar mobil *****/
+.baggrund {
+  background-size: 150px;
+  width: 100%;
+  height: 1050px;
+}
+
+/*** Retning af menupunkter ***/
+.menupunkter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 -70px;
+  list-style: none;
+}
+
+/*** Styling af titler ***/
+.nav_mobil {
+  text-decoration: none;
+  font-family: 'Vesper Libre', serif;
+  font-weight: 1000;
+  font-size: 26px;
+  color: #6e331c;
+}
+
+.nav_mobil {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_mobil:hover {
+  color: #bb6c4d;
+}
+
+/*** Pil tilbage knap ***/
+.pil {
+  position: absolute;
+  margin-left: 2vw;
+}
+
+/***** Navigationbar desktop *****/
+.nav_li .nav_a, button {
+  font-family: 'Vesper Libre', serif;
+  font-weight: 1000;
+  font-size: 26px;
+  color: #6e331c;
+  text-decoration: none;
+}
+
+/*** Styling af header generelt ***/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5% 10px 5%;
+  background-color: #fffded;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links .nav_li {
+  display: inline-block;
+  padding: 20px 40px 0px 40px;
+}
+
+.nav_links .nav_li .nav_a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links .nav_li .nav_a:hover {
+  color: #bb6c4d;
+}
+
+/*** Styling af knap i navbar ***/
+button {
+  padding: 9px 25px;
+  background-color: #f00007;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #a91d21;
+}
+
+.interface_icon {
+  display: none;
+}
+
+/***** landings page *****/
+.forside_mobil {
+  display: none;
+}
+
+.forside_mindre_desktop {
+  display: none;
+}
+
+/**** Knap på forsiden ****/
+.juleknap {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 20vw;
+  margin-top: 153vw;
+  width: 53vw;
+}
+
+.juleknap2 {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  margin-left: 24.4vw;
+  margin-top: 152vw;
+  width: 50vw;
+}
+
+/***** Opskrift underside *****/
+.boller {
+  width: 100%;
+}
+
+.opskrift_container {
+  /* Skygge på baggrundsbilledet */
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  /* Bredden på hele sectionen */
+  width: 75%;
+  margin: 2% auto;
+}
+
+/*** Titel øverst på siden ***/
+.titel {
+  font-family: 'Vesper Libre', serif;
+  font-weight: 700;
+  font-size: 30px;
+  background: #c33026;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Info under billedet */
+.detaljer {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+}
+
+/* Markering af ingredienser */
+.indgredienser {
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  padding: 20px;
+}
+
+/* Underoverskrifter */
+.underoverskrift {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Flueben udfor ingredienser */
+ul.flueben li:before {
+  color: #455560;
+  content: "\2713\0020";
+  font-weight: 600;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+/* Fjerner oprindelige punkter */
+.flueben li {
+  list-style-type: none;
+}
+
+.opskrift_top {
+  margin-top: 1vw;
+}
+
+/* Mellemrum mellem sætninger */
+li {
+  margin-bottom: 7px;
+}
+
+/* Border for at indkapsle nyt afsnit */
+.fremgangsmedtode {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+/* Mellemrum og styling og sætninger */
+.fremgangsmedtode li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+/* Genstart af optælling */
+ol {
+  counter-reset: item;
+}
+
+/* Genstart af optælling */
+ol>li {
+  counter-increment: item;
+}
+
+/* Genstart af optælling */
+ol>li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 8px;
+}
+
+/*** Styling af video ***/
+.videooverskrift {
+  font-weight: 700;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  font-size: 1.5vw;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4vw;
+  width: 710px;
+  height: 100%;
+}
+
+/***** Footer *****/
+.footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #fffded;
+}
+
+.addresse {
+  margin-left: 1.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
+.kontakt {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.icons .socialemedier {
+  width: 40px;
+  height: auto;
+  margin: 3px;
+}
+
+.icons {
+  margin-right: 1.5vw;
+}
+
+.small_device_addresse {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: auto;
+  margin-left: 1.5vw;
+}
+
+/***** Produkt side *****/
+/*** første 2 billeder ***/
+.første2billeder {
+  margin-top: 5vw;
+}
+
+.container_opskrift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_billede {
+  max-width: 100%
+}
+
+.billede {
+  flex-basis: 40%;
+}
+
+/*** Tekst styling ***/
+.tekst {
+  padding-left: 20px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1vw;
+}
+
+/*** Artikel opsætning ***/
+.overskrift {
+  margin-bottom: 2vw;
+}
+
+.under_overskrift {
+  margin-bottom: 1vw;
+}
+
+.brødtekst {
+  margin-bottom: 1vw;
+}
+
+/*** Link til opskrift side ***/
+.link_opskrift {
+  text-decoration: none;
+  color: #e20019;
+}
+
+/*** Links til butikker ***/
+.køb {
+  border-top: 1px solid black;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+}
+
+.butikslogoer {
+  height: 2vw;
+  margin-bottom: 7vw;
+}
+
+/*** Infografik og tabel ***/
+table {
+  font-family: 'Oxygen', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*** Infographic billede ***/
+.info_g_img {
+  display: block;
+  margin: 3vw auto 5vw auto;
+  width: 60%;
+  height: 60%;
+}
+
+/*** Overskrift inden tabel ***/
+.næringsindhold {
+  margin: 5vw 20vw 3vw 20vw;
+}
+
+/*** opskrift side stagged ***/
+.overskrift_s {
+  text-align: center;
+  margin-top: 3vw;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 5vw;
+  display: none;
+}
+
+/*** Yderligere styling til mobil ***/
+.under_overskrift_s {
+  margin-bottom: 2vw;
+}
+
+.brødtekst_s {
+  margin-bottom: 2vw;
+}
+
+.img_billede_s {
+  height: 60vw;
+  width: 57vw;
+  margin-left: 21.5vw;
+  margin-top: 5vw;
+  display: none;
+}
+
+.tekst_s {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  display: none;
+}
+
+.køb_s {
+  border-top: 1px solid grey;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  display: none;
+}
+
+.butikslogoer_s {
+  height: 3vw;
+  margin: 0 auto 0 auto;
+  display: none;
+}
+
+/***** Media queries *****/
+/***** Mindre telefoner *****/
+@media only screen and (max-width : 320px) {
+  .interface_icon {
+    display: flex;
+  }
+
+  .addresse {
+    display: none;
+  }
+
+  .kontakt {
+    display: none;
+  }
+
+  .small_device_addresse {
+    display: inline;
+    text-align: left;
+    font-family: none;
+    margin-left: 1.5vw;
+  }
+
+  .overskrift_s {
+    font-size: 8vw;
+  }
+
+  .tekst_s {
+    font-size: 3.5vw !important;
+  }
+
+  .næringsindhold {
+    font-size: 3.4vw;
+  }
+
+  table {
+    font-size: 3vw;
+  }
+
+  .butikslogoer_s {
+    height: 5vw;
+  }
+
+  .info_g_img {
+    display: none !important;
+  }
+}
+
+/***** Større telefoner ******/
+@media only screen and (max-width : 625px) {
+
+  /***** Forside *****/
+  .forside_mobil {
+    display: flex;
+  }
+
+  .interface_icon {
+    display: flex;
+  }
+
+  .addresse {
+    display: none;
+  }
+
+  .kontakt {
+    display: none;
+  }
+
+  .titel {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .small_device_addresse {
+    display: inline;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1.5vw;
+  }
+
+  .juleknap {
+    margin-left: 28vw;
+    width: 45vw;
+  }
+
+  .tekst_s {
+    font-size: 2.7vw;
+  }
+
+  .under_overskrift_s {
+    margin-bottom: 3.4vw;
+  }
+
+  .brødtekst_s {
+    margin-bottom: 3.4vw;
+  }
+
+  .videooverskrift {
+    font-size: 3vw;
+  }
+}
+
+/***** Ipad *****/
+@media only screen and (max-width: 768px) {
+
+  /***** Forside *****/
+  .forside_mindre_desktop {
+    display: none !important;
+  }
+
+  .forside_mobil {
+    display: flex;
+  }
+
+  /***** Navigationsbar *****/
+  .nav_links {
+    display: none;
+  }
+
+  .interface_icon {
+    display: flex;
+  }
+
+  /***** Footer *****/
+  .addresse {
+    margin-left: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+
+  .kontakt {
+    margin-left: 150px;
+    margin-right: auto;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  .opskrift_container {
+    /* Bredden på hele sectionen */
+    width: 100%;
+  }
+
+/* Knap top forside */
+  .juleknap {
+    display: none;
+  }
+
+  .juleknap2 {
+    display: flex;
+    width: 40vw;
+    margin-top: 155vw;
+    margin-left: 29vw;
+  }
+
+  .opskrift_container {
+    margin: 0% auto;
+  }
+
+/* video retning*/
+  video {
+    width: 100%;
+  }
+
+  .videooverskrift {
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  button {
+    display: none;
+  }
+
+  .juleknap {
+    margin-left: 15vw;
+    margin-top: 42vw;
+    width: 25vw;
+  }
+
+  .første2billeder {
+    display: none;
+  }
+
+  .info_g_img {
+    display: block;
+    margin: 10vw auto 5vw auto;
+    width: 94%;
+    height: 94%;
+  }
+
+  .overskrift_s {
+    display: block;
+  }
+
+  .img_billede_s {
+    display: block;
+  }
+
+  .tekst_s {
+    display: block;
+  }
+
+  .køb_s {
+    display: block;
+  }
+
+  .butikslogoer_s {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .logo {
+    width: 170px !important;
+    height: 110px !important;
+  }
+
+  .nav_li, .nav_a, button {
+    font-weight: 600 !important;
+    font-size: 20px;
+  }
+}
+
+/****** Mellem Devices, Desktops ******/
+@media only screen and (max-width: 1099px) {
+  .forside_mindre_desktop {
+    display: flex;
+  }
+
+  .forside_desktop {
+    display: none;
+  }
+
+  .logo {
+    width: 200px;
+    height: 130px;
+  }
+
+  button {
+    padding: 6px 10px;
+  }
+
+  .nav_li, .nav_a, button {
+    font-size: 23px !important;
+    font-weight: 700 !important;
+  }
+
+  .juleknap {
+    margin-left: 16vw !important;
+    margin-top: 42vw !important;
+    width: 20vw !important;
+  }
+
+  .tekst {
+    font-size: 1.4vw;
+  }
+}
+
+/****** Større Devices, Wide Screens ******/
+@media only screen and (max-width: 1260px) {
+  header {
+    padding: 0px 1% 10px 1% !important;
+  }
+
+  .nav_links .nav_li {
+    padding: 20px 2vw 0px 2vw !important;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+
+  .nav_li, .nav_a, button {
+    font-weight: 800;
+  }
+
+  .juleknap {
+    margin-left: 15vw;
+    margin-top: 31vw;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 1417px) {
+  header {
+    padding: 0px 2% 10px 2%;
+  }
+
+  .nav_links .nav_li {
+    padding: 20px 30px 0px 30px;
+  }
+
+  .juleknap {
+    margin-left: 17vw;
+    margin-top: 31vw;
+    width: 16vw;
+  }
+}
+
+@media only screen and (min-width: 1418px) {
+  .juleknap {
+    margin-left: 16.5vw;
+    margin-top: 31vw;
+    width: 16vw;
+  }
+}
+
+@media only screen and (min-width: 1418px) {}

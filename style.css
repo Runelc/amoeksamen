@@ -55,7 +55,7 @@
   text-decoration: none;
 }
 
-/*** Styling af header generelt ***/
+/*** Styling af header ***/
 header {
   display: flex;
   justify-content: space-between;
